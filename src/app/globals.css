@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex flex-col gap-4 bg-zinc-950 py-2 text-zinc-100 antialiased;
+  }
+}

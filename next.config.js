@@ -1,14 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: '/ipfs',
-        destination: '/',
-        permanent: true
-      }
-    ]
-  }
-}
+const nextConfig = {}
 
 module.exports = nextConfig
