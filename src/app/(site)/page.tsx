@@ -2,7 +2,7 @@ import { getNotifications } from '~/services/supabase'
 
 import { Widget } from '~/components/Widget'
 
-export const revalidate = 30
+export const revalidate = 0
 
 const Home = async () => {
   const { data } = await getNotifications()
