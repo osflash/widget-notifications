@@ -8,7 +8,7 @@ const Home = async () => {
   const { data } = await getNotifications()
 
   return (
-    <main className="flex flex-col items-center justify-center gap-4">
+    <main className="flex flex-col items-center justify-center gap-4 px-2">
       <Widget notifications={data} />
     </main>
   )

@@ -1,11 +1,13 @@
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
+import { v4 as uuid } from 'uuid'
 import webPush from 'web-push'
 import { WebPushError } from 'web-push'
+
 import { payloadSchema } from '~/libs/zod'
+
 import { supabaseAdmin } from '~/services/supabaseAdmin'
-import { v4 as uuid } from 'uuid'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL!
 
